@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="dev/styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>CADASTRO</h1>
+        <h2>Coloque seus dados para completar o cadastro</h2>
+        <form id="form-cadastro">
+            <label for="nome-cadastro">Nome</label>
+            <input type="text" required id="nome-cadastro">
+            <p class="error-message">
+                O nome precisa ser completo
+            </p>
+            <label for="email-cadastro">E-mail</label>
+            <input type="email" required id="email-cadastro">
+            <label for="numero-de-contato-cadastro">Telefone</label>
+            <input type="tel" required maxlength="11" id="numero-de-contato-cadastro" placeholder="DDD + Numero">
+            <label for="senha-cadastro">Senha</label>
+            <input type="password" required id="senha-cadastro">
+            <button type="submit">Cadastrar</button>
+        </form>
+        <p class="success-message">
+        </p>
+    </div>
+    <script src="dev/scripts/main.min.js"></script>
+</body>
+</html>

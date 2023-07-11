@@ -1,0 +1,91 @@
+@corDeFundo: #00120B;
+@corDoTextoPrincipal: #D8E4FF;
+@corDeFundoCadastro: #6B818C;
+@corDoTextoPlaceholder: #d8e4ff80;
+@corDoBotao: #31E981;
+@corDoTextoDoBotao: #00120B;
+@corDoBotaoHover: #26bb67;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+}
+
+.container {
+    margin: 80px auto;
+    max-width: 640px;
+    width: 100%;
+}
+
+body {
+    background-color: @corDeFundo;
+    color: @corDoTextoPrincipal;
+    h1 {
+        font-weight: bolder;
+    }
+}
+
+form {
+    display: block;
+    margin-top: 40px;
+    
+    label {
+        font-size: 20px;
+    }
+    
+    input {
+        display: block;
+        padding: 10px;
+        margin-bottom: 8px;
+        width: 100%;
+        background-color: @corDeFundoCadastro;
+        color: @corDoTextoPrincipal;
+        font-weight: bold;
+        border: none;
+        border-radius: 8px;
+        outline-color: @corDoTextoPrincipal;
+
+        &::placeholder{
+            color: @corDoTextoPlaceholder;
+        }
+    }
+    
+    .error-message {
+        margin-bottom: 8px;
+        border-bottom: 2px solid red;
+        max-width: 210px;
+        width: 100%;
+        display: none;
+    }
+    
+    button {
+        background-color: @corDoBotao;
+        padding: 7px;
+        margin-top: 24px;
+        max-width: 200px;
+        width: 100%;
+        font-size: 18px;
+        border-radius: 8px;
+        border: none;
+        color: @corDoTextoDoBotao;
+        font-weight: bold;
+        cursor: pointer;
+        
+        &:hover {
+            background-color: @corDoBotaoHover;
+        }
+    }
+}
+
+
+.success-message {
+    margin-top: 10px;
+    border-bottom: 2px solid @corDoBotaoHover;
+    margin-top: 10px;
+    max-width: 420px;
+    width: 100%;
+    display: none;
+}
